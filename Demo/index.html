@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jardín del Alma</title>
 </head>
+
 <body>
     <style>
         body {
@@ -13,59 +15,132 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #266fb8;
             padding: 20px;
             text-align: center;
         }
+
         p {
 
             font-size: 18px;
             line-height: 1.5;
         }
+
         img {
             max-width: 100%;
             height: auto;
         }
+
         ul {
             padding: 0;
             margin: 0;
         }
+
         li {
             margin: 10px 0;
+        }
+
+        .video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #Floreria {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            width: 97%;
+            justify-content: space-between;
+            padding: 15px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
         }
     </style>
     <header>
         <h1>Jardín del Alma</h1>
     </header>
-    <ul>
-        <li>Rosa</li>
-        <p>La rosa es quizás una de las flores más reconocidas y <strong>populares en todo el mundo </strong>. Con sus pétalos suaves y delicados, la rosa viene en una amplia gama de colores, desde el clásico rojo pasión hasta el delicado rosa, el vibrante amarillo y el puro blanco. Además de su belleza visual, la rosa también es apreciada por su aroma dulce y distintivo. Se ha asociado durante mucho tiempo con el amor, la pasión y el romance, lo que la convierte en una opción popular para regalos románticos y ocasiones especiales como bodas y aniversarios.</p>
-         <img src="rosa.jfif" alt="">
-        <li>Lirio</li>
-        <p>El lirio es una <strong>flor elegante y majestuosa</strong> que se destaca por sus tallos altos y sus flores grandes y llamativas. Con sus pétalos acampanados y sus colores vibrantes, como el blanco puro, el rosa suave y el amarillo brillante, el lirio agrega un toque de gracia y sofisticación a cualquier arreglo floral. Además de su belleza estética, el lirio también tiene un aroma distintivo y encantador. Se asocia comúnmente con la pureza, la inocencia y la renovación, lo que lo convierte en una opción popular para celebrar ocasiones como nacimientos, bautizos y bodas.</p>
-        <img src="lirio.jfif" alt="">
-        <li>Tulipan</li>
-        <p>El tulipán es una flor primaveral encantadora conocida por su forma única y sus brillantes colores. Con sus tallos delgados y sus pétalos en forma de copa, el tulipán viene en una amplia variedad de tonos, desde el rojo intenso y el amarillo brillante hasta el morado profundo y el blanco puro. Esta diversidad de colores y formas hace que los tulipanes sean una opción versátil para arreglos florales y decoraciones. Además de su belleza visual, el tulipán también es apreciado por su elegancia simple y su simbolismo de <strong>amor y felicidad</strong>, lo que lo convierte en una opción popular para una amplia gama de ocasiones, desde cumpleaños y aniversarios hasta eventos formales y celebraciones de primavera.</p>
-        <img src="tulipanes.jpg" alt="">
-    </ul>
-    <video hrf="https://youtu.be/32KIWRg98Vk?si=4ZVInMOoD6dKsAFv">Flores</video>
-    <form id="Floreria" action="formulario" method="POST">
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre" required>
+    <main>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Flor</th>
+                    <th>Descripción</th>
+                    <th>Imagen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Rosa</strong></td>
+                    <td>La rosa es quizás una de las flores más reconocidas y <strong><em>populares en todo el
+                                mundo</em></strong>. Con sus pétalos suaves y delicados, la rosa viene en una amplia
+                        gama de
+                        colores, desde el clásico rojo pasión hasta el delicado rosa, el vibrante amarillo y el puro
+                        blanco. Además de su belleza visual, la rosa también es apreciada por su aroma dulce y
+                        distintivo. Se ha asociado durante mucho tiempo con el amor, la pasión y el romance, lo que la
+                        convierte en una opción popular para regalos románticos y ocasiones especiales como bodas y
+                        aniversarios.</td>
+                    <td><img src="rosa.jfif" alt="Rosa"></td>
+                </tr>
+                <tr>
+                    <td><strong>Lirio</strong></td>
+                    <td>El lirio es una <strong><em>flor elegante y majestuosa</em></strong> que se destaca por sus
+                        tallos altos
+                        y sus flores grandes y llamativas. Con sus pétalos acampanados y sus colores vibrantes, como el
+                        blanco puro, el rosa suave y el amarillo brillante, el lirio agrega un toque de gracia y
+                        sofisticación a cualquier arreglo floral. Además de su belleza estética, el lirio también tiene
+                        un aroma distintivo y encantador. Se asocia comúnmente con la pureza, la inocencia y la
+                        renovación, lo que lo convierte en una opción popular para celebrar ocasiones como nacimientos,
+                        bautizos y bodas.</td>
+                    <td><img src="lirio.jfif" alt="Lirio"></td>
+                </tr>
+                <tr>
+                    <td><strong>Tulipán</strong></td>
+                    <td>El tulipán es una flor primaveral encantadora conocida por su forma única y sus brillantes
+                        colores. Con sus tallos delgados y sus pétalos en forma de copa, el tulipán viene en una amplia
+                        variedad de tonos, desde el rojo intenso y el amarillo brillante hasta el morado profundo y el
+                        blanco puro. Esta diversidad de colores y formas hace que los tulipanes sean una opción versátil
+                        para arreglos florales y decoraciones. Además de su belleza visual, el tulipán también es
+                        apreciado por su elegancia simple y su simbolismo de <strong><em>amor y felicidad</em></strong>,
+                        lo que
+                        lo convierte en una opción popular para una amplia gama de ocasiones, desde cumpleaños y
+                        aniversarios hasta eventos formales y celebraciones de primavera.</td>
+                    <td><img src="tulipanes.jpg" alt="Tulipán"></td>
+                </tr>
+            </tbody>
+        </table>
 
-        <label for="fecha">Fecha</label>
-        <input type="date" id="fecha" name="fecha" required>
-        <label for="flores">flores</label>
-        <select id="Flores" name="Flores" required>
-            <option value="simple">Rosa</option>
-            <option value="doble">Tulipan</option>
-            <option value="familiar">Habitación Familiar - S/350</option>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/E8Musb9Xnpk?si=VSwZEqCRIVsA7obb"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
 
-        </select>
+        <form id="Floreria" action="formulario" method="POST">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-        <input type="submit" value="Enviar">
-    </form>
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <label for="flores">flores</label>
+            <select id="Flores" name="Flores" required>
+                <option value="Rosa">Rosa</option>
+                <option value="Tulipan">Tulipan</option>
+                <option value="Lirio">Lirios</option>
+
+            </select>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+    </main>
 
 </body>
+
 </html>
