@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detalles</title>
+
+    <!-- FUENTE GOOGLE FONTS : Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONS: Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <!-- ICONS: Line Awesome -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Animaciones AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+
+    <!-- Mis Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <div class="hm-wrapper">
+
+        <!-- =================================
+           HEADER MENU
+        ================================== -->
+        <div class="hm-header">
+
+            <div class="container">
+                <div class="header-menu">
+
+                    <div class="hm-logo">
+                        <a href="#">
+                            <img src="img/logo-home-master-store.png" alt="">
+                        </a>
+                    </div>
+
+                    <nav class="hm-menu">
+                        <ul>
+                            <li><a href="..//tienda-online-main/index.html">Inicio</a></li>
+                            <li><a href="tienda.html">Tienda</a></li>
+                            <li><a href="http://">Contacto</a></li>
+                        </ul>
+
+
+                        <div class="hm-icon-cart">
+                            <a href="#">
+                                <i class="las la-shopping-cart"></i>
+                                <span>0</span>
+                            </a>
+                        </div>
+
+                        <div class="icon-menu">
+                            <button type="button"><i class="fas fa-bars"></i></button>
+                        </div>
+
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- =================================
+           HEADER MENU Movil
+        ================================== -->
+        <div class="header-menu-movil">
+            <button class="cerrar-menu"><i class="fas fa-times"></i></button>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../tienda.html">Tienda</a></li>
+                <li><a href="http://">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- =================================
+           Detalles
+        ================================== -->
+
+        <div class="product-details">
+            <!-- Carrusel de imágenes -->
+            <div class="image-carousel">
+                <input type="radio" name="carousel" id="img1" checked>
+                <input type="radio" name="carousel" id="img2">
+                <input type="radio" name="carousel" id="img3">
+
+                <div class="carousel-images">
+                    <label for="img1" class="carousel-image">
+                        <img src="img/1.jpg" alt="Imagen del producto 1">
+                    </label>
+                    <label for="img2" class="carousel-image">
+                        <img src="img/c-1.jpg" alt="Imagen del producto 2">
+                    </label>
+                    <label for="img3" class="carousel-image">
+                        <img src="img/1.jpg" alt="Imagen del producto 3">
+                    </label>
+                </div>
+
+                <div class="carousel-controls">
+                    <label for="img1"></label>
+                    <label for="img2"></label>
+                    <label for="img3"></label>
+                </div>
+            </div>
+
+            <!-- Información del producto -->
+            <div class="product-info">
+                <h1>Nombre del Producto</h1>
+                <p>Descripción breve del producto.</p>
+                <p class="price">Precio: $XX.XX</p>
+                <label for="quantity">Cantidad:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <a href="carrito.html" button class="add-to-cart">Agregar al carrito</button>
+            </div>
+
+            <!-- Descripción extendida -->
+            <div class="extended-description">
+                <div class="tabs">
+                    <input type="radio" name="tab" id="tab1" checked>
+                    <label for="tab1">Descripción</label>
+                    <input type="radio" name="tab" id="tab2">
+                    <label for="tab2">Materiales</label>
+                    <input type="radio" name="tab" id="tab3">
+                    <label for="tab3">Instrucciones de cuidado</label>
+
+                    <div class="tab-content">
+                        <div class="tab1-content">
+                            <p>Detalles adicionales sobre el producto.</p>
+                        </div>
+                        <div class="tab2-content">
+                            <p>Materiales utilizados en el producto.</p>
+                        </div>
+                        <div class="tab3-content">
+                            <p>Instrucciones de cuidado del producto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =================================
+           FOOTER
+        ================================== -->
+        <footer>
+
+            <div class="container">
+
+                <div class="foo-row">
+                    <div class="foo-col">
+                        <h2>Suscríbete <br>a nuestro newsletter</h2>
+                        <form action="" method="GET">
+
+                            <div class="f-input">
+                                <input type="text" placeholder="Ingrese su correo">
+                                <button type="submit" class="hm-btn-round btn-primary"><i
+                                        class="far fa-paper-plane"></i></button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                    <div class="foo-col">
+                        <ul>
+                            <li><a href="http://">Productos</a></li>
+                            <li><a href="http://">Campañas</a></li>
+                            <li><a href="http://">Nosotros</a></li>
+                            <li><a href="http://">Contacto</a></li>
+                            <li><a href="http://">Enlace 01</a></li>
+                            <li><a href="http://">Enlace 02</a></li>
+                            <li><a href="http://">Enlace 03</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <div class="foo-copy">
+            <div class="container">
+                <p>HM STORE 2021 © Todos los derechos reservados</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Animaciones : AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Mi Script -->
+    <script src="js/app.js"></script>
+
+    <script>
+
+        AOS.init({
+            duration: 1200,
+        })
+
+
+    </script>
+
+</body>
+
+</html>
